@@ -1,0 +1,76 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Computer",
+      "price": 1800,
+      "quantity": 100,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 2,
+      "name": "Printer",
+      "price": 2500,
+      "quantity": 50,
+      "selected": true,
+      "available": false
+    },
+    {
+      "id": 3,
+      "name": "Smartphone",
+      "price": 2000,
+      "quantity": 300,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 4,
+      "name": "Smartphone",
+      "price": 2000,
+      "quantity": 300,
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 5,
+      "name": "aaa",
+      "price": "11",
+      "quantity": "333",
+      "selected": true,
+      "available": true
+    },
+    {
+      "id": 6,
+      "name": "cc",
+      "price": "40",
+      "quantity": "40",
+      "selected": false,
+      "available": false
+    },
+    {
+      "name": "ppppppp",
+      "price": "1111",
+      "quanity": "111111",
+      "selected": true,
+      "available": true,
+      "id": 7
+    },
+    {
+      "id": 8,
+      "name": "azert",
+      "price": "524",
+      "quantity": "50",
+      "selected": true,
+      "available": true
+    },
+    {
+      "name": "",
+      "price": 0,
+      "quanity": 0,
+      "selected": true,
+      "available": true,
+      "id": 9
+    }
+  ]
+}
