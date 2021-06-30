@@ -1,9 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ProductsService} from '../../services/products.service';
 import {Product} from '../../model/product.model';
 import {Observable, of} from 'rxjs';
 import {catchError, map, startWith} from 'rxjs/operators';
-import {AppDataState, DataStateEnum} from '../../state/product.state';
+import {ActionEvent, AppDataState, DataStateEnum, productsActionsTypes} from '../../state/product.state';
 import {Router} from '@angular/router';
 
 @Component({
@@ -98,5 +98,19 @@ export class ProductsComponent implements OnInit {
 
   onUpdateProduct(p) {
     this.router.navigateByUrl("/update/"+p.id)
+  }
+
+  onAction($event: ActionEvent) {
+   switch ($event.type){
+     case productsActionsTypes.GET_ALL_PRODUCTS:this.onGetAllProduct();break;
+     case productsActionsTypes.GET_SELECTED_PRODUCTS:this.onGetSelectedProduct();break;
+     case productsActionsTypes.GET_AVAILABLE_PRODUCTS:this.onGetAvailableProduct();break;
+     case productsActionsTypes.SEARCH_PRODUCTS:this.onSearch($event.paylaod);break;
+     case productsActionsTypes.NEW_PRODUCTS:this.onNewProduct();break;
+     case productsActionsTypes.SELECT_PRODUCT:this.onselected($event.paylaod);break;
+     case productsActionsTypes.DELETE_PRODUCT:this.onDeleteProduct($event.paylaod);break;
+     case productsActionsTypes.EDIT_PRODUCT:this.onUpdateProduct($event.paylaod);break;
+
+   }
   }
 }

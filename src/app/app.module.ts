@@ -10,6 +10,9 @@ import {HttpClientModule} from '@angular/common/http';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AddproductComponent } from './components/addproduct/addproduct.component';
 import { UpdateproductComponent } from './components/updateproduct/updateproduct.component';
+import { ProductsNavBarComponent } from './components/products/products-nav-bar/products-nav-bar.component';
+import { ProductsListComponent } from './components/products/products-list/products-list.component';
+import { ProductItemComponent } from './components/products/products-list/product-item/product-item.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { UpdateproductComponent } from './components/updateproduct/updateproduct
     HomeComponent,
     AddproductComponent,
     UpdateproductComponent,
+    ProductsNavBarComponent,
+    ProductsListComponent,
+    ProductItemComponent,
   ],
   imports: [
     BrowserModule,
